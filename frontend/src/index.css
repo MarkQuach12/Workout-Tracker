@@ -1,0 +1,183 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css?family=Poppins:500');
+
+/* layout */
+:root {
+  --primary: #797eff;
+  --error: #e7195a;
+}
+
+body{
+  margin: 0;
+  font-family: "Poppins";
+}
+
+#dark header {
+  background: #540c6b;
+}
+
+#light header {
+  background: #797eff;
+}
+
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+.workout-details {
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+#light .workout-details {
+  background-color: #ffffff;
+}
+
+#dark .workout-details {
+  background-color: #540c6b;
+}
+
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+
+#light .workout-details h4 {
+  color: #797eff;
+}
+
+#dark .workout-details h4 {
+  color: #ffffff;
+}
+
+
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+#light .workout-details p {
+  color: #555;
+}
+
+#dark .workout-details p {
+  color: #dad7f8;
+}
+
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* new workout form */
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+#searchInput {
+  width: 80%;
+}
+
+button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#light button {
+  background: #797eff;
+}
+
+#dark button {
+  background: #540c6b;
+}
+
+.searchbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mostRecent {
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
+
+#light form h3, label {
+  color: black;
+}
+
+
+#dark form label, h3 {
+  color: rgb(255, 255, 255);
+}
+
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error{
+  border: 1px solid var(--error);
+}
+
+.switch {
+  display: flex;
+  width: 100vx;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch label {
+  margin: 10px;
+  color: white;
+}
